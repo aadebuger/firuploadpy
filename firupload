@@ -1,0 +1,2 @@
+echo $firuploaddir
+python $firuploaddir/firuploadpy/src/main/python/onlineapp/FirUpload.py $*
