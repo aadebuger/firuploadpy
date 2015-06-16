@@ -25,7 +25,6 @@ class Test(unittest.TestCase):
         token = res.json()['bundle']['pkg']['token']
         key = res.json()['bundle']['pkg']['key']
         res1 = onlineapp.FirUpload.upload(key,token,"","","MainActivity-debug.apk")
-        print res1['message']
         print res.json()['id']
 #        onlineapp.FirUpload.update (res.json()['id'],token)
         onlineapp.FirUpload.update1(res1['versionOid'],"1.0","myunittest")
